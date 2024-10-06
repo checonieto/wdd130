@@ -1,0 +1,126 @@
+/* Define color scheme in :root pseudo-class */
+:root {
+    --primary-color: #505033; /* Drab Dark Brown */
+    --secondary-color: #264969; /* Indigo Dye */
+    --accent-color-1: #cfcfb4; /* Pearl */
+    --accent-color-2: #b4cde4; /* Columbia Blue */
+    --text-color: #333333; /* Dark text color */
+  }
+  
+  /* General Styling */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--accent-color-2); /* Columbia Blue as background */
+    max-width: 1200px;
+    margin: 0 auto; /* Center content */
+    padding: 20px;
+  }
+  
+  /* Headings */
+  h1, h2 {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color); /* Drab Dark Brown */
+  }
+  
+  /* Paragraphs */
+  p {
+    line-height: 1.6;
+    color: var(--text-color);
+  }
+  
+  /* Remove underline from links */
+  a {
+    text-decoration: none;
+    color: var(--secondary-color); /* Indigo Dye */
+  }
+  
+  a:hover {
+    color: var(--accent-color-1); /* Pearl on hover */
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color); /* Indigo Dye */
+    padding: 20px;
+  }
+  
+  header img {
+    max-height: 60px; /* Adjust the logo size */
+  }
+  
+  nav a {
+    margin: 0 15px;
+    font-weight: 700;
+  }
+  
+  nav a:hover {
+    color: var(--accent-color-1); /* Pearl */
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: var(--primary-color); /* Backup background if image fails */
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .hero img {
+    display: block;
+    width: 100%; /* Added later  */
+    height: auto; /* Maintains aspect ratio */
+  }
+  
+  /* Hero heading */
+  .hero h1 {
+    font-size: 48px;
+    color: var(--secondary-color); /* Indigo Dye */
+  }
+  
+  /* Article Styling */
+  article img {
+    max-width: 300px;
+    border-radius: 8px;
+    margin: 20px 0;
+  }
+  
+  article p {
+    font-size: 18px;
+    color: var(--text-color);
+  }
+  
+  /* Section Styling */
+  section {
+    margin: 50px 0;
+  }
+  
+  section h2 {
+    font-size: 32px;
+    color: var(--primary-color); /* Drab Dark Brown */
+  }
+  
+  section p {
+    font-size: 16px;
+    color: var(--text-color);
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: var(--primary-color); /* Drab Dark Brown */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer nav a {
+    margin: 0 10px;
+  }
